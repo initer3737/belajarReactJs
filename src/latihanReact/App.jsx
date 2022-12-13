@@ -1,11 +1,14 @@
 import {
-    IconBrandFacebook,
     IconBrandGithub,
     IconBrandTwitter,
     IconBrandNetflix,
-    IconPlayerPlay
+    IconPlayerPlay,
+    IconBrandInstagram,
+    IconBrandWebflow
 } from '@tabler/icons';
 import React from 'react';
+import {DataSelector} from '../game/stateRecoilGame/data'
+import { useRecoilValue } from 'recoil';
 import {
     Button,
     Img,
@@ -16,6 +19,7 @@ import chisana from '../assets/chisana.webp'
 // grid place-content-center flex align-center justify-center
 
 export default function App() {
+    const dataProfile=useRecoilValue(DataSelector)
     return (
         <div className='bg-slate-100 grid place-content-center min-h-screen py-3'>
           <div className="flex flex-col gap-3 align-center justify-center antialiased">
@@ -56,21 +60,23 @@ export default function App() {
                 </Card>
             </div>
           </div>
-            <div className='flex gap-x-2 mt-3'>
-                <Button className='bg-sky-600 text-white'>
-                    <IconBrandTwitter />
-                    login
+            <div className='flex gap-x-2 mt-3 justify-center flex-wrap md:gap-2 gap-3 md:flex-row flex-col'>
+                <Button className='bg-sky-600 text-white'
+                    onClick={()=>window.open(dataProfile.course,'_blank')}
+                >
+                    <IconBrandWebflow />
+                    website
                 </Button>
-                <Button onClick={() => console.log('facebook')}>
-                    <IconBrandFacebook />
-                    login
+                <Button onClick={() => window.open(dataProfile.instagram,'_blank')}>
+                    <IconBrandInstagram />
+                    instagram
                 </Button>
                 <Button
-                    {...{ onClick: () => console.log('github') }}
+                    {...{ onClick: () =>window.open(dataProfile.github,'_blank') }}
                     className='bg-black text-white'
                 >
                     <IconBrandGithub />
-                    login
+                    github
                 </Button>
             </div>
         </div>

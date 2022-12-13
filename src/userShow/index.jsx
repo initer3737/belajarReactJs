@@ -21,7 +21,7 @@ export default function UserShow(props) {
         getUser();
     }, [id]);
     return (
-        <div>
+        <div className='flex flex-col justify-center'>
             <h1>get all user</h1>
             <ul>
                 <li>{user.id}</li>

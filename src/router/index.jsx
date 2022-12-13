@@ -3,7 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 import Users from '../users';
 import UserShow from '../userShow';
 import RecoilData from '../recoilShow';
+import Counter from '../game/counter';
 import App from '../latihanReact/App';
+import ProfileGame from '../game/profile';
 
 export default function Router() {
     return (
@@ -12,6 +14,9 @@ export default function Router() {
             <Route path='/user/:id' element={<UserShow />} />
             <Route path='/rekoil/:id' element={<RecoilData />} />
             <Route path='/latihan' element={<App />} />
+            <Route path='/game' element={<Counter />} />
+            <Route path='/game/profile' element={<ProfileGame />} />
+            <Route path='/*' element={<Users />} />
         </Routes>
     );
 }
