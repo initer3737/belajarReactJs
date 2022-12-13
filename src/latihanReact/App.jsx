@@ -61,19 +61,20 @@ export default function App() {
             </div>
           </div>
             <div className='flex gap-x-2 mt-3 justify-center flex-wrap md:gap-2 gap-3 md:flex-row flex-col'>
-                <Button className='bg-sky-600 text-white'
+                <Button className='bg-sky-600 text-white border-double hover:border-2 border-sky-400'
                     onClick={()=>window.open(dataProfile.course,'_blank')}
                 >
                     <IconBrandWebflow />
                     website
                 </Button>
-                <Button onClick={() => window.open(dataProfile.instagram,'_blank')}>
+                <Button className='bg-sky-600 text-white border-double hover:border-2 border-sky-400'
+                    onClick={() => window.open(dataProfile.instagram,'_blank')}>
                     <IconBrandInstagram />
                     instagram
                 </Button>
                 <Button
                     {...{ onClick: () =>window.open(dataProfile.github,'_blank') }}
-                    className='bg-black text-white'
+                    className='bg-black text-white border-double hover:border-2 border-sky-400'
                 >
                     <IconBrandGithub />
                     github
