@@ -7,6 +7,7 @@ export default function TodoList() {
    const [list,setList]=useRecoilState(TodoReko)
    const [listInput,setListInput]=useRecoilState(TodoInput)
    const [warning,setWarning]=useRecoilState(TodoWarning)
+
     const OnChange=(e)=>{
          setListInput(e.target.value)
     }
@@ -24,17 +25,16 @@ export default function TodoList() {
         }
     }
 
-    const Delete=(value)=>{
-            // list.map((val,index)=>{
-                setList(list.splice(value,1))
-            // })
-        //filter hanya membutuhkan nilai false saja agar nilai array bisa dihilangkan
+    const Delete=()=>{
+           setList((prev)=>prev.filter((value,index)=>index !== prev.length-1))
+        //filter hanya membutuhkan nilai false saja agar data di array index tertentu bisa dihilangkan
     }
 
     const Update=(valueUpdate,valueState)=>{
         
-        //filter hanya membutuhkan nilai false saja agar nilai array bisa dihilangkan
+        
     }
+
 
   return (
     <div>
@@ -59,9 +59,9 @@ export default function TodoList() {
             <li className='text-4xl'>todo list coy</li>
             {list.map((val,index)=>(
                 <li key={index} className='text-xl text-blue-600 flex flex-row gap-3 py-3 text-right'>
-                    {`${index+1} : ${val}`} 
+                    {`${index} : ${val}`} 
                 <Button
-                    onClick={()=>Delete(val)}
+                    onClick={()=>Delete(index)}
                 >delete</Button>
                 {/* <Button
                 //  onClick={Update}
