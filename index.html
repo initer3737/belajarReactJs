@@ -5,9 +5,59 @@
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vite + React</title>
+        <style>
+#lingkaran{
+    --value:12px;
+    --time:500ms;
+    width: var(--value);
+    height: var(--value);
+    border: 2px solid blue ;
+    border-radius: 50%;
+    animation-name: boing;
+    animation-duration: var(--time);
+    animation-iteration-count:infinite;
+    transition: ease-out;
+    transition-delay: calc(var(--time))+300ms;
+    position: absolute;
+    display: none;
+} 
+
+@keyframes boing {
+    0%{
+        transform: scale(-1);
+        border: 2px solid blue ;
+    }
+    25%{
+        transform: scale(-2);
+        border: 2px solid dodgerblue ;
+    }
+    50%{
+        transform: scale(-3);
+        border: 2px solid royalblue ;
+    }
+    75%{
+        transform: scale(-4);
+        border: 2px solid salmon ;
+    }
+    100%{
+        transform: scale(-5);
+        border: 2px solid aqua ;
+    }
+}
+        </style>
     </head>
     <body>
         <div id="root"></div>
-        <script type="module" src="/src/main.jsx"></script>
+        <div id="lingkaran"></div>
+        <script>
+            const cursorAnimate=document.getElementById('lingkaran')
+            document.onmousemove=(e)=>{
+                cursorAnimate.style.left=(e.pageX-40)+'px'
+                cursorAnimate.style.top=(e.pageY-40)+'px'
+                cursorAnimate.style.display='block'
+            }
+
+        </script>
+         <script type="module" src="/src/main.jsx"></script>
     </body>
 </html>

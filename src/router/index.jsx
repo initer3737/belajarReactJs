@@ -6,6 +6,7 @@ import RecoilData from '../recoilShow';
 import Counter from '../game/counter';
 import App from '../latihanReact/App';
 import ProfileGame from '../game/profile';
+import TodoList from '../todolist/todoList';
 
 export default function Router() {
     return (
@@ -16,6 +17,7 @@ export default function Router() {
             <Route path='/latihan' element={<App />} />
             <Route path='/game' element={<Counter />} />
             <Route path='/game/profile' element={<ProfileGame />} />
+            <Route path='/todos' element={<TodoList />} />
             <Route path='/*' element={<Users />} />
         </Routes>
     );
