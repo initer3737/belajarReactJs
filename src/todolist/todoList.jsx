@@ -26,7 +26,7 @@ export default function TodoList() {
 
     const Delete=(value)=>{
             // list.map((val,index)=>{
-                setList(list.filter(val=>val !== value))
+                setList(list.splice(value,1))
             // })
         //filter hanya membutuhkan nilai false saja agar nilai array bisa dihilangkan
     }
