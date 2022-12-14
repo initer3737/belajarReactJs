@@ -1,14 +1,20 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {atom,selector} from 'recoil';
+
+const todoList=[
+  'makan makanan sehat',
+  'makan mi ayam',
+  'minum yakult tiap hari biar usus smile terus',
+]
 
 const TodoReko=atom({
   key:'todolist',
-  default:[]
+  default:todoList
 })
 
 const TodoInput=atom({
   key:'todolistInput',
-  default:[]
+  default:''
 })
 
 const TodoWarning=atom({

@@ -27,12 +27,15 @@ export default function TodoList() {
 
     const Delete=()=>{
            setList((prev)=>prev.filter((value,index)=>index !== prev.length-1))
-        //filter hanya membutuhkan nilai false saja agar data di array index tertentu bisa dihilangkan
+        //filter hanya membutuhkan nilai output false saja agar data di array index tertentu bisa dihilangkan
     }
 
-    const Update=(valueUpdate,valueState)=>{
-        
-        
+    const Update=(indexarr)=>{
+        const updatedValue=prompt(`update data : ${list[indexarr]}`,list[indexarr])
+        if(updatedValue !== undefined || updatedValue !== null)
+        {
+            setList(prevstate=>list.map((value,index)=>index === indexarr?updatedValue:prevstate))
+        }
     }
 
 
@@ -59,13 +62,13 @@ export default function TodoList() {
             <li className='text-4xl'>todo list coy</li>
             {list.map((val,index)=>(
                 <li key={index} className='text-xl text-blue-600 flex flex-row gap-3 py-3 text-right'>
-                    {`${index} : ${val}`} 
+                    {`${index+1} : ${val}`} 
                 <Button
-                    onClick={()=>Delete(index)}
+                    onClick={Delete}
                 >delete</Button>
-                {/* <Button
-                //  onClick={Update}
-                >update</Button> */}
+                <Button
+                 onClick={()=>Update(index)}
+                >update</Button>
                 </li>
             ))}
         </ul>
