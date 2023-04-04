@@ -34,7 +34,7 @@ export default function App() {
                     <Img src={chisana} alt="chisana one san"
                         className='px-1 py-3 rounded' 
                     onClick={
-                        ()=>window.open('https://anitrendz.net/news/2022/06/12/new-lycoris-recoil-trailer-reveals-july-2-premiere-ending-song-and-more/','_blank')
+                        ()=>window.open('https://www.independenmedia.id/various/2767966161/sinopsis-demon-slayer-kimetsu-no-yaiba-season-3-pembantaian-desa-penempa-pedang','_blank')
                     }/>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ad magnam laudantium animi officiis voluptatibus sapiente sit, sunt modi eius quam? Pariatur similique illo et ullam, repellendus omnis doloremque nostrum?
                 </Card>
@@ -44,17 +44,17 @@ export default function App() {
                     <Card.title>
                     <h1 className='text-2xl justify-center flex items-center'>
                         <IconBrandNetflix className='text-rose-800'/>
-                        Lycoris Recoil trailer
+                        kimetsu no yaiba trailer
                     </h1>
                     </Card.title>
-                    <Iframe width="606" height="341" src="https://www.youtube.com/embed/7AqlvbzBQG4" title="TVアニメ『リコリス・リコイル』エンディングテーマ解禁PV｜2022年7月放送" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
+                    <Iframe width="606" height="341" src="https://www.youtube.com/embed/PUeB0qbisq0" title="TVアニメ『リコリス・リコイル』エンディングテーマ解禁PV｜2022年7月放送" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
                       className='p-2'
                     />
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ad magnam laudantium animi officiis voluptatibus sapiente sit, sunt modi eius quam? Pariatur similique illo et ullam, repellendus omnis doloremque nostrum?
                     <Card.footer>
                      <h1 className='text-2xl justify-center flex items-center'>
                         <IconBrandNetflix className='text-rose-800'/>
-                        Lycoris Recoil trailer
+                       kimetsu no yaiba trailer
                     </h1>
                     </Card.footer>
                 </Card>

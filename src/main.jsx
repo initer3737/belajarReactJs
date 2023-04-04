@@ -4,6 +4,7 @@ import App from './App';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
     <RecoilRoot>
         <Suspense fallback={<div>loading...</div>}>
@@ -13,3 +14,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Suspense>
     </RecoilRoot>
 );
+
+useServiceWorker();
