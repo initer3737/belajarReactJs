@@ -7,7 +7,7 @@ export default function Counter() {
         <ul className='flex flex-col text-center mb-52'>
             <li className='text-2xl'>recoil</li>
             <li>atom :digunakan untuk menyimpan data seperti data dari api atau yang lainnya</li>
-            <li>selector :menampung data dari dan hanya bisa dibaca saja [to get data from atom]</li>
+            <li>selector :menampung data dari dan hanya bisa dibaca saja [to get data and manipulate data from atom] </li>
             <li>useRecoilValue :digunakkan untuk membaca data dari selector </li>
             <li>useRecoilState :digunakkan untuk menyimpan data yang ada di atom [sama seperti usestate di react]</li>
             <li>const data = atom({`{key:'unique value',default:'0'}`})</li>
