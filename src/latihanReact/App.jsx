@@ -15,7 +15,7 @@ import {
     Card,
     Iframe
 } from  './assemble';
-import chisana from '../assets/chisana.webp'
+// import chisana from '../assets/chisana.webp'
 // grid place-content-center flex align-center justify-center
 
 export default function App() {
