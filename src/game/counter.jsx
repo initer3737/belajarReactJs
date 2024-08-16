@@ -4,10 +4,10 @@ export default function Counter() {
   return (
     <div>
         <GameState/>
-        <ul className='flex flex-col text-center mb-52'>
+        <ul className='flex flex-col text-center mb-52 mx-56'>
             <li className='text-2xl'>recoil</li>
             <li>atom :digunakan untuk menyimpan data seperti data dari api atau yang lainnya</li>
-            <li>selector :menampung data dari dan hanya bisa dibaca saja [to get data and manipulate data from atom] </li>
+            <li>selector :menampung data dari atom dan hanya bisa dibaca saja atau memanipulasi data dari atom [to get data and manipulate data from atom] </li>
             <li>useRecoilValue :digunakkan untuk membaca data dari selector </li>
             <li>useRecoilState :digunakkan untuk menyimpan data yang ada di atom [sama seperti usestate di react]</li>
             <li>const data = atom({`{key:'unique value',default:'0'}`})</li>
@@ -24,11 +24,12 @@ export default function Counter() {
               unmounting : saat komponen dihapus dari dom contohnya ketika user hendak pindah halaman yang mana halaman sebelumnya ada sebuah musik yang dijalankan secara otomatis oleh developer maka seharusnya musik itu berhenti ketika user hendak berpindah halaman
               jika developer tidak mengimplementasikan unmounting pada aplikasinya justru musik yang diputar secara otomatis akan terus dimainkan ketika user pindah halaman [pengalaman pribadi]
             </li>
+            <div className='bg-blue-400 p-1 my-4'/>
             <li>
               <a 
                 href="https://medium.com/codeacademia/apa-itu-component-lifecycle-di-react-bfcb64f64e0e"
                 target={'_blank'}
-                className='text-blue-300 hover:text-blue-500 text-2xl'
+                className='text-blue-300 hover:text-blue-500 text-2xl bg-indigo-700'
             >
                 info-info
             </a>

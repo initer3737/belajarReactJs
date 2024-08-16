@@ -21,12 +21,12 @@ export default function UserShow(props) {
         getUser();
     }, [id]);
     return (
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center items-center h-screen'>
             <h1>get all user</h1>
             <ul>
-                <li>{user.id}</li>
-                <li>name {user.name}</li>
-                <li>username {user.username}</li>
+                <li>id : {user.id}</li>
+                <li>name : {user.name}</li>
+                <li>username : {user.username}</li>
                 <li>
                     website{' '}
                     <a href={`https://${user.website}`} target='_blank'>

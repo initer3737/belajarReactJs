@@ -1,5 +1,5 @@
 import React from 'react'
-import {atom,selector} from 'recoil'
+import {atom,selector,useRecoilState} from 'recoil'
 
 // localStorage.setItem('score',0)
 // const getDataScore=localStorage.getItem('score')
@@ -13,7 +13,8 @@ let dataplayer={
     github:'https://github.com/initer3737',
     course:'https://initer3737.github.io/course/#/course',
     websiteTitle:'check me out',
-    addres:'hi no kuni konoha ga kure manguntur ken'
+    addres:'hi no kuni konoha ga kure manguntur ken',
+    aisatsu:"aku adalah yotsusan machi seorang neet yang akan menjadi front end developer dimasa yang akan datang"
 }
 
 const Data=atom({

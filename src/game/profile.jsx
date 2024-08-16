@@ -10,6 +10,7 @@ export default function ProfileGame() {
             <li>score : {profile.score} </li>
             <li><address>address : {profile.addres}</address> </li>
             <li>age : {profile.age} </li>
+            <li>aisatsu : {profile.aisatsu} </li>
             <li>portofolio : 
                 <a href={profile.websiteLink} target="_blank" className='text-blue-300 hover:text-blue-500 ease-in duration-150'> {profile.websiteTitle}</a> 
             </li>

@@ -15,7 +15,7 @@ import {
     Card,
     Iframe
 } from  './assemble';
-// import chisana from '../assets/chisana.webp'
+import chisato from '../assets/Chisato-nishikigi-1.webp'
 // grid place-content-center flex align-center justify-center
 
 export default function App() {
@@ -31,7 +31,7 @@ export default function App() {
                         Lycoris Recoil
                     </h1>
                     </Card.title>
-                    <Img src={chisana} alt="chisana one san"
+                    <Img src={chisato} alt="chisato one san"
                         className='px-1 py-3 rounded' 
                     onClick={
                         ()=>window.open('https://www.independenmedia.id/various/2767966161/sinopsis-demon-slayer-kimetsu-no-yaiba-season-3-pembantaian-desa-penempa-pedang','_blank')
