@@ -14,7 +14,7 @@ let dataplayer={
     course:'https://initer3737.github.io/course/#/course',
     websiteTitle:'check me out',
     addres:'hi no kuni konoha ga kure manguntur ken',
-    aisatsu:"aku adalah yotsusan machi seorang neet yang akan menjadi front end developer dimasa yang akan datang"
+    aisatsu:"aku adalah yotsusan machi seorang neet yang akan menjadi front end developer dimasa yang akan datang desu"
 }
 
 const Data=atom({
