@@ -32,7 +32,7 @@ export default function App() {
                     </h1>
                     </Card.title>
                     <Img src={chisato} alt="chisato one san"
-                        className='px-1 py-3 rounded' 
+                        className='px-1 py-3 rounded-[15px] shadow-lg shadow-blue-700/50' 
                     onClick={
                         ()=>window.open('https://www.independenmedia.id/various/2767966161/sinopsis-demon-slayer-kimetsu-no-yaiba-season-3-pembantaian-desa-penempa-pedang','_blank')
                     }/>

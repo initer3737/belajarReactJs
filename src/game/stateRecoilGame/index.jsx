@@ -21,6 +21,7 @@ export default function GameState() {
         // setScore(prev=>prev+numb)
          console.log("anime is good")
         //  return setScore(prev=>prev+numb)
+        return score*numb
     }
     const Increment=()=>{
         return setScore(prev=>prev+1)

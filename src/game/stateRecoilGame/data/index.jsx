@@ -11,7 +11,7 @@ let dataplayer={
     websiteLink:'https://initer3737.github.io',
     instagram:'https://www.instagram.com/yotsusan_machi/',
     github:'https://github.com/initer3737',
-    course:'https://initer3737.github.io/course/#/course',
+    course:'https://training-ground-programmis.vercel.app/',
     websiteTitle:'check me out',
     addres:'hi no kuni konoha ga kure manguntur ken',
     aisatsu:"aku adalah yotsusan machi seorang neet yang akan menjadi front end developer dimasa yang akan datang desu"
@@ -30,7 +30,14 @@ const DataSelector=selector({
     }
 })
 
+const multiply3=selector({
+    key:'multiply213',
+    get:({get})=>{
+       return get(Data).score*3
+    }
+})
 export{
     Data,
-    DataSelector
+    DataSelector,
+    multiply3
 }
