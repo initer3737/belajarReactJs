@@ -7,7 +7,9 @@ import Counter from '../game/counter';
 import App from '../latihanReact/App';
 import ProfileGame from '../game/profile';
 import TodoList from '../todolist/todoList';
-
+import Blog from '../blog/Blog';
+import Ref from '../ref/ref';
+import Reducer from '../reducer/reducer';
 export default function Router() {
     const {pathname}=useLocation()
     const pathUrl=pathname.replace('/','')
@@ -21,6 +23,7 @@ export default function Router() {
                 <NavLink to={'/user/1'} className={`${pathUrl.split('/')[0] === 'user'?'text-[red]':'text-[#fff]'} hover:text-rose-400`}>user 1</NavLink>
                 <NavLink to={'/rekoil/1'} className={`${pathUrl.split('/')[0] === 'rekoil'?'text-[red]':'text-[#fff]'} hover:text-rose-400`}>rekoil 1</NavLink>
                 <NavLink to={'/latihan'} className={`${pathUrl === 'latihan'?'text-[red]':'text-[#fff]'} hover:text-rose-400`}>latihan</NavLink>
+                <NavLink to={'/blog'} className={`${pathUrl === 'blog'?'text-[red]':'text-[#fff]'} hover:text-rose-400`}>blog</NavLink>
             </div>
         <Routes>
             <Route path='/' element={<Users />} />
@@ -30,6 +33,9 @@ export default function Router() {
             <Route path='/game' element={<Counter />} />
             <Route path='/game/profile' element={<ProfileGame />} />
             <Route path='/todos' element={<TodoList />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/ref' element={<Ref />} />
+            <Route path='/reducer' element={<Reducer />} />
             <Route path='/*' element={<Users />} />
         </Routes>
         </>
